@@ -1,81 +1,151 @@
-🥗 Smart Food Quality Detection Using Deep Learning & Computer Vision
-A real-time, consumer-ready AI system that detects food items and classifies their quality stage (e.g., fresh, ripe, overripe, stale) using computer vision and deep learning. It also predicts estimated shelf life and provides nutritional tips and recipe suggestions — all from a live webcam feed.
+# 🥗 Smart Food Monitoring System
 
-🚀 Project Summary
-Manual food inspection is slow, subjective, and not scalable. Existing automated systems are often expensive, binary, or limited to industrial settings. This project proposes a lightweight, extensible, and real-time solution using open-source technologies.
+AI-enabled food monitoring system designed to improve food safety, reduce waste, and enable real-time monitoring using modern technologies.
 
-✅ Key Features
-Real-Time Detection: Webcam-based object detection using YOLOv8.
+--------------------------------------------------
 
-Multi-Stage Classification:
+📌 OVERVIEW
 
-Fruits: Fresh, Ripe, Unripe, Overripe, Stale
+The Smart Food Monitoring System is an intelligent solution that monitors food quality and storage conditions in real time.
 
-Vegetables: Fresh, Stale
+It integrates IoT sensors, data processing, and intelligent analysis to detect unsafe conditions, spoilage risks, and anomalies in food environments.
 
-Dual Classification Pipeline: First identify whether it's a fruit or vegetable, then classify its quality.
+This system can be used in:
+- Food storage facilities
+- Smart kitchens
+- Warehouses
+- Supply chains
+- Healthcare institutions
 
-Shelf Life Estimation: Predict remaining days using predefined quality-stage mappings.
+--------------------------------------------------
 
-Nutritional Tip Generator: Hardcoded health advice based on item and quality.
+🎯 OBJECTIVES
 
-Recipe Suggestions: Dictionary-based recommendation engine using food type and stage.
+- Monitor food storage conditions continuously
+- Detect abnormal temperature, humidity, or gas levels
+- Reduce food spoilage and wastage
+- Improve food quality and safety
+- Provide real-time alerts and insights
 
-🧠 Tech Stack
-YOLOv8 for object detection (via Ultralytics)
+--------------------------------------------------
 
-MobileNetV2 for classification (with custom dense layers)
+✨ FEATURES
 
-Streamlit for GUI and webcam interface
+- 🌡 Real-time temperature and humidity monitoring
+- 🧪 Food quality condition detection
+- 📊 Data analysis and logging
+- 🚨 Alert generation for unsafe conditions
+- 🤖 Smart rule-based decision system
+- 🌐 Scalable IoT-friendly architecture
 
-TensorFlow/Keras for model training
+--------------------------------------------------
 
-Python, OpenCV, NumPy, Matplotlib
+🛠 TECHNOLOGIES USED
 
-📊 Dataset
-Size: 50,000+ labeled images
+- 🐍 Python
+- 🌐 IoT Sensors
+- 📊 Data Processing and Analysis
+- 🤖 Basic AI / Intelligent Logic
+- 📁 CSV and dataset handling
 
-Sources: Kaggle + custom-collected images
+--------------------------------------------------
 
-Categories: Banana, Mango, Cucumber, Carrot, Apple, Broccoli (and more)
+⚙ HOW THE SYSTEM WORKS
 
-Preprocessing:
+1. Sensors collect environmental data
+2. Data is processed and cleaned
+3. Thresholds or rules are applied
+4. Unsafe conditions are detected
+5. Alerts and logs are generated
 
-Resized to 224x224
+--------------------------------------------------
 
-RGB normalization
+📁 PROJECT STRUCTURE
 
-Data augmentation: Rotation, flipping, brightness
+Smart-Food-Monitoring/
+- data/
+  - datasets and sample data
+- scripts/
+  - monitoring and processing scripts
+- analysis/
+  - data analysis modules
+- models/
+  - intelligent logic or AI models
+- outputs/
+  - logs, alerts, results
+- requirements.txt
+- README.md
 
-📈 Model Performance
-Task	Accuracy
-Fruit vs Vegetable	99.1%
-Vegetable Quality (2-class)	97.4%
-Fruit Quality (5-class)	92.8%
+--------------------------------------------------
 
-🛠️ Current Status
-✅ Data preprocessing completed
+⚙ INSTALLATION
 
-✅ All models trained and tested
+Prerequisites:
+- Python 3.8 or higher
+- pip package manager
 
-✅ Streamlit-based real-time system working
+Setup steps:
 
-✅ Detection + classification + suggestion modules integrated
+git clone https://github.com/022RaTiNdRa/Smart-Food-Monitoring.git
+cd Smart-Food-Monitoring
+pip install -r requirements.txt
 
-✅ Output tested on multiple food types
+--------------------------------------------------
 
-🧪 Model evaluation using accuracy (future: precision, recall, F1)
+▶ USAGE
 
-📦 Final polishing and packaging in progress
+Run the main program:
 
-🔮 Upcoming Features
-🔁 Model performance improvement via more data and fine-tuning
+python main.py
 
-🌾 Extension to grains, dairy, and packaged foods
+You can:
+- Monitor food storage conditions
+- View alerts and logs
+- Analyze collected data
 
-🌙 Better performance in low-light conditions
+--------------------------------------------------
 
-📱 Deployment on Raspberry Pi or Android (lightweight version)
+📈 APPLICATIONS
 
-📊 Class-wise precision & recall reporting
-& many more.
+- 🏠 Smart homes and kitchens
+- 🏭 Food storage warehouses
+- 🏪 Retail and supermarkets
+- 🚚 Food transportation
+- 🏥 Hospitals and institutions
+
+--------------------------------------------------
+
+🔮 FUTURE ENHANCEMENTS
+
+- 🤖 Machine learning-based spoilage prediction
+- 📱 Web or mobile dashboard
+- ☁ Cloud integration
+- 🔔 SMS or email alerts
+- 📦 Supply chain tracking
+
+--------------------------------------------------
+
+🤝 CONTRIBUTING
+
+Contributions are welcome.
+
+Steps:
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+--------------------------------------------------
+
+📜 LICENSE
+
+This project is licensed under the MIT License.
+
+--------------------------------------------------
+
+📬 CONTACT
+
+For questions or suggestions, open an issue on GitHub.
+
+⭐ If you find this project useful, consider starring the repository.
